@@ -7,7 +7,7 @@ const options = {
 };
 
 export const initFacebookPixel = () => {
-  ReactPixel.init('COLOQUE_SEU_PIXEL_ID_AQUI', null, options);
+  ReactPixel.init('1103551258322995', null, options);
   ReactPixel.pageView();
 };
 
