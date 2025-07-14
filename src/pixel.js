@@ -1,16 +1,9 @@
-// src/pixel.js
 import ReactPixel from 'react-facebook-pixel';
 
 const options = {
-  autoConfig: true,
-  debug: false,
+  autoConfig: true, 
+  debug: true,
 };
 
-export const initFacebookPixel = () => {
-  ReactPixel.init('1103551258322995', null, options);
-  ReactPixel.pageView(); // dispara evento inicial
-};
-
-export const trackEvent = (eventName, data = {}) => {
-  ReactPixel.track(eventName, data);
-};
+ReactPixel.init('1103551258322995', {}, options);
+ReactPixel.pageView();
