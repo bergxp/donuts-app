@@ -1,9 +1,8 @@
-// src/pixel.js
 import ReactPixel from 'react-facebook-pixel';
 
 const options = {
   autoConfig: true,
-  debug: false,
+  debug: true, // ative para ver logs no console
 };
 
 export const initFacebookPixel = () => {
